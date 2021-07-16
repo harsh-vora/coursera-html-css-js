@@ -1,0 +1,87 @@
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-family: "Times New Roman", Times, serif;
+}
+
+.row {
+	width: 100%;
+}
+
+#menu-title {
+	text-align: center;
+	margin-top: 35px;
+	margin-bottom: 70px;
+}
+
+.container{
+	position: relative;
+	margin: 15px;
+}
+
+.item-box {
+	position: relative;
+	background-color: #909090;
+	margin: 15px;
+	padding: 25px;
+	border: 3px solid #000000;
+}
+
+.item-box p {
+	margin-top: 20px;
+}
+
+#title2 {
+	color: #ffffff;
+}
+
+.item-title {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 6px 90px;
+	border-left: 3px solid #000000;
+	border-bottom: 3px solid #000000;
+}
+
+#item-title-box1 {
+	background: #d59898;
+}
+
+#item-title-box2 {
+	background: #c14543;
+}
+
+#item-title-box3 {
+	background: #e5d198;
+}
+
+
+/***** Creating a custom framework for responsive design *****/
+
+.col-lg-4, .col-md-6 {
+	float: left;
+}
+
+/***** For Desktop / Large Devices (above 992px) *****/
+
+@media (min-width: 992px) {
+	.col-lg-4 {
+		width: 33.33%;
+	}
+}
+
+/***** For Tablet / Medium Devices (between 768px and 991px) *****/
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.col-md-6 {
+		width: 50%;
+	}
+}
+
+/***** Elements would automatically stack on top of each other
+ for Mobile / Small Devices (below 767px) *****/
